@@ -127,36 +127,65 @@
 					</div>
 
 				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-					
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">Eskil.ottesen@outlook.com</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(+47) 907 54 567</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>Spannavegen 38<br />
-                                        5531 Haugesund<br />
-										Norway</span>
-									</div>
-								</section>
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<form action="https://api.web3forms.com/submit" method="POST">
+
+								<!-- Access Key (hidden) -->
+								<input type="hidden" name="access_key" value="e4858d03-0d94-410e-9478-6afc1c4907b0">
+							  
+								<!-- Name Input -->
+								<label for="name">Name</label>
+								<input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Name">
+							  
+								<!-- Email Input -->
+								<label for="email">Email</label>
+								<input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Email">
+							  
+								<!-- Message Textarea -->
+								<label for="message">Message</label>
+								<textarea id="message" name="message" placeholder="Your Message" required aria-label="Message"></textarea>
+							  
+								<!-- Honeypot Spam Protection (hidden) -->
+								<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+							  
+								<!-- Custom Confirmation / Success Page -->
+								<!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+							  
+								<!-- Submit Button -->
+								<button type="submit">Submit Form</button>
+							  
+							  </form>
+							  
+						</section>
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<a href="#">Eskil.ottesen@outlook.com</a>
+								</div>
 							</section>
-						</div>
-					</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-phone"></span>
+									<h3>Phone</h3>
+									<span>(+47) 907 54 567</span>
+								</div>
+							</section>
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-home"></span>
+									<h3>Address</h3>
+									<span><span>Spannavegen 38<br />
+										5531 Haugesund<br />
+										Norway</span>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
 
 				<!-- Footer -->
 					<footer id="footer">
