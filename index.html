@@ -13,6 +13,86 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		  <title>Contact Forms</title>
+  <style>
+    /* Basic reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Container for side-by-side layout */
+    .container {
+      display: flex;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Form styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .fields {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .field {
+      flex: 1;
+    }
+
+    .contact-section {
+      max-width: 500px;
+    }
+
+    .contact-method {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .contact-method .icon {
+      font-size: 1.5rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    /* Styling for buttons */
+    button, input[type="submit"], input[type="reset"] {
+      padding: 0.5rem 1rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .primary {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    /* Contact Details Styling */
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  </style>
 	</head>
 	<body class="is-preload">
 	
@@ -157,34 +237,159 @@
 					<!-- Contact -->
 					<section id="contact">
 						<div class="inner">
-							<form action="https://api.web3forms.com/submit" method="POST">
+							<title>Contact Forms</title>
+								<style>
+									/* Basic reset */
+									* {
+									box-sizing: border-box;
+									margin: 0;
+									padding: 0;
+									font-family: Arial, sans-serif;
+									}
+									
+									/* Container for side-by-side layout */
+									.container {
+									display: flex;
+									gap: 2rem;
+									max-width: 1200px;
+									margin: 0 auto;
+									padding: 2rem;
+									}
 
-								<!-- Access Key (hidden) -->
-								<input type="hidden" name="access_key" value="e4858d03-0d94-410e-9478-6afc1c4907b0">
-							  
-								<!-- Name Input -->
-								<label for="name">Name</label>
-								<input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Name">
-							  
-								<!-- Email Input -->
-								<label for="email">Email</label>
-								<input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Email">
-							  
-								<!-- Message Textarea -->
-								<label for="message">Message</label>
-								<textarea id="message" name="message" placeholder="Your Message" required aria-label="Message"></textarea>
-							  
-								<!-- Honeypot Spam Protection (hidden) -->
-								<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-							  
-								<!-- Custom Confirmation / Success Page -->
-								<!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-							  
-								<!-- Submit Button -->
-								<button type="submit">Submit Form</button>
-							  
-							  </form>
-							  
+									/* Form styling */
+									form {
+									display: flex;
+									flex-direction: column;
+									gap: 1rem;
+									}
+
+									.fields {
+									display: flex;
+									gap: 1rem;
+									}
+
+									.field {
+									flex: 1;
+									}
+
+									.contact-section {
+									max-width: 500px;
+									}
+
+									.contact-method {
+									display: flex;
+									align-items: center;
+									gap: 1rem;
+									margin-top: 1rem;
+									}
+
+									.contact-method .icon {
+									font-size: 1.5rem;
+									}
+
+									.actions {
+									display: flex;
+									gap: 1rem;
+									}
+
+									/* Styling for buttons */
+									button, input[type="submit"], input[type="reset"] {
+									padding: 0.5rem 1rem;
+									border: none;
+									cursor: pointer;
+									border-radius: 4px;
+									}
+
+									button {
+									background-color: #4CAF50;
+									color: white;
+									}
+
+									.primary {
+									background-color: #007BFF;
+									color: white;
+									}
+
+									/* Contact Details Styling */
+									.contact-details {
+									display: flex;
+									flex-direction: column;
+									gap: 1rem;
+									}
+								</style>
+								
+							
+
+								<div class="container">
+
+									<!-- Web3Forms Form -->
+									<section class="form-section">
+									<form action="https://api.web3forms.com/submit" method="POST">
+										<input type="hidden" name="access_key" value="e4858d03-0d94-410e-9478-6afc1c4907b0">
+										<label for="name">Name</label>
+										<input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Name">
+										<label for="email">Email</label>
+										<input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Email">
+										<label for="message">Message</label>
+										<textarea id="message" name="message" placeholder="Your Message" required aria-label="Message"></textarea>
+										<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+										<button type="submit">Submit Form</button>
+									</form>
+									</section>
+
+									<!-- Additional Contact Form and Contact Info -->
+									<section class="contact-section">
+									<form method="post" action="#">
+										<div class="fields">
+										<div class="field">
+											<label for="name2">Name</label>
+											<input type="text" name="name" id="name2" />
+										</div>
+										<div class="field">
+											<label for="email2">Email</label>
+											<input type="text" name="email" id="email2" />
+										</div>
+										</div>
+										<div class="field">
+										<label for="message2">Message</label>
+										<textarea name="message" id="message2" rows="6"></textarea>
+										</div>
+										<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+										</ul>
+									</form>
+
+									<!-- Contact Details -->
+									<div class="contact-details">
+										<div class="contact-method">
+										<span class="icon solid alt fa-envelope">📧</span>
+										<div>
+											<h3>Email</h3>
+											<a href="mailto:Eskil.ottesen@outlook.com">Eskil.ottesen@outlook.com</a>
+										</div>
+										</div>
+										<div class="contact-method">
+										<span class="icon solid alt fa-phone">📞</span>
+										<div>
+											<h3>Phone</h3>
+											<span>(+47) 907 54 567</span>
+										</div>
+										</div>
+										<div class="contact-method">
+										<span class="icon solid alt fa-home">🏠</span>
+										<div>
+											<h3>Address</h3>
+											<span>
+											Spannavegen 38<br />
+											5531 Haugesund<br />
+											Norway
+											</span>
+										</div>
+										</div>
+									</div>
+									</section>
+								</div>
 						</div>
 					</section>
 
